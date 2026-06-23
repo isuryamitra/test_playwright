@@ -1,0 +1,15 @@
+apiVersion: v1alpha
+kind: playwright
+
+sauce:
+  region: eu-central-1
+
+playwright:
+  version: package.json
+
+suites:
+  - name: Regression Suite
+    params:
+      browserName: chromium
+    testMatch:
+       - "test1.spec.js"
